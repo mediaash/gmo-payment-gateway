@@ -1,0 +1,14 @@
+{
+    "name": "mediaash/gmo-payment-gateway",
+    "type": "liblary",
+    "require": {
+        "guzzlehttp/guzzle": "^6.2"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mediaash",
+            "email": "tanaka.masahide@gmail.com"
+        }
+    ]
+}
