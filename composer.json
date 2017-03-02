@@ -2,7 +2,18 @@
     "name": "mediaash/gmo-payment-gateway",
     "type": "liblary",
     "require": {
-        "guzzlehttp/guzzle": "^6.2"
+        "guzzlehttp/guzzle": "^6.2",
+        "monolog/monolog": "^1.22"
+    },
+    "autoload": {
+        "psr-4": {
+            "Settlement\\GMO\\Payment\\Gateway\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "classmap": [
+            "tests/TestCase.php"
+        ]
     },
     "license": "MIT",
     "authors": [
@@ -10,5 +21,8 @@
             "name": "mediaash",
             "email": "tanaka.masahide@gmail.com"
         }
-    ]
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "6.0"
+    }
 }
