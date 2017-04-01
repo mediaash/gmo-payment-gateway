@@ -27,4 +27,10 @@ class Recurring extends Request
         $this->response = $this->client->post('/payment/UnregisterRecurring.idPass', $params);
         return $this;
     }
+
+    public function status($params)
+    {
+        $this->response = $this->client->post('/payment/SearchRecurringResult.idPass', $params);
+        return $this;
+    }
 }
